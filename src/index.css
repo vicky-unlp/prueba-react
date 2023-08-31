@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background-color: #eaf4ec;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Nabila';
+  src: url('../public/font/Nabila/Nabila-2Oxe8.otf');
+}
+
+/* LAYOUT */
+
+.header{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+  background-color: #33302d;
+  color: #e7e5e2;
+  position: sticky;
+  top: 0;
+}
+
+.body{
+  margin: 100px auto;
+  width: 1000px;
+  border: 1px solid #a59a8e;
+  background-color: white;
+  box-shadow: lightgray 10px 10px 10px;
+}
+
+.body #top-anchor{
+  scroll-margin-top: 250px;
+}
+
+/* GENERAL */
+
+.principal-container{
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-evenly;
+}
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 70px;
+}
+
+.principal-title{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  scroll-margin-top: 150px;
+  font-family: 'Nabila';
+}
+
+.principal-title img{
+  width: 60px;
+  height: 60px;
+}
+
+.edit-button,
+.img-button,
+.link-button{
+  width: 140px;
+  height: 30px;
+  align-self: center;
+  margin: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #33302d;
+  color: #c4c2c0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.section-title{
+  display: list-item;
+  list-style-position: inside;
+  font-family: 'Nabila';
+  letter-spacing: 2px;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER */
+
+.my-name{
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Nabila', Times, serif;
+  letter-spacing: 3px;
+}
+
+.header-bottom{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.my-description{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bottom-description,
+.nav-bar{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-bar{
+  gap: 10px;
+}
+
+.nav-bar a{
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid white;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.nav-bar a:hover{
+  border-bottom: 2px solid #7c746b;
+}
+
+.nav-bar a:active{
+  border-bottom: 2px solid #33302d;  
+}
+
+/* PERSONAL INFORMATION */
+
+#general-information{
+  background-color: whitesmoke;
+  margin: 70px 0 0 0;
+}
+
+.principal-container .info-container{
+  width: 400px;
+}
+
+.info-title{
+  color: #33302d;
+  font-size: 25px;
+  margin: 12px 0;
+  text-transform: uppercase;
+  scroll-margin-top: 0;
+  font-family: 'Nabila';
+}
+
+#personal{
+  font-family: 'Nabila';
+  font-size: 30px;
+}
+
+.info-container hr{
+  border: 2px dashed #7c746b;
+}
+
+.info-container .img-input{
+  margin-top: 3px;
+}
+
+.info-container .data-input{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.entry{
+  display: flex;
+  gap: 10px;
+  padding: 1px;
+  font-size: 17px;
+}
+
+.entry label{
+  font-weight: 500;
+  color: #33302d;
+}
+
+/* EDUCATION */
+
+.edu-container{
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
+
+.project-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 500px;
+  gap: 20px;
+}
+
+.project-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c4c2c0;
+  box-shadow: 5px 5px 5px #e7e5e2;
+  justify-content: space-between;
+}
+
+.img-proj-container{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.img-proj-container .img{
+  padding: 20px;
+  align-self: center;
+}
+
+.proj-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container{
+  align-self: center;
+  width: auto;
+}
+
+.project-card .info-container,
+.project-card .form-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .info-container .entry,
+.form-container .cv-form .entry{
+  padding: 0 25px; 
+}
+
+.info-container .entry p{
+  margin: 0;
+  word-break: normal;
+  white-space: normal;
+}
+
+.buttons{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* WORK */
+
+.work-card{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.description-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.description-list ul{
+  margin: 0;
+}
