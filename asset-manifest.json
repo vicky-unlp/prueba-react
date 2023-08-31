@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/prueba-react/static/css/main.56ab20aa.css",
+    "main.js": "/prueba-react/static/js/main.f5c7391b.js",
+    "static/js/787.34a20539.chunk.js": "/prueba-react/static/js/787.34a20539.chunk.js",
+    "static/media/Nabila-2Oxe8.otf": "/prueba-react/static/media/Nabila-2Oxe8.4352abbfd2837196337a.otf",
+    "index.html": "/prueba-react/index.html",
+    "main.56ab20aa.css.map": "/prueba-react/static/css/main.56ab20aa.css.map",
+    "main.f5c7391b.js.map": "/prueba-react/static/js/main.f5c7391b.js.map",
+    "787.34a20539.chunk.js.map": "/prueba-react/static/js/787.34a20539.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56ab20aa.css",
+    "static/js/main.f5c7391b.js"
+  ]
+}
